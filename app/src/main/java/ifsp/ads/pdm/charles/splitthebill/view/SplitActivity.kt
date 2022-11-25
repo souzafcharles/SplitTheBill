@@ -11,6 +11,7 @@ class SplitActivity : AppCompatActivity() {
     private val sab : ActivitySplitBinding by lazy {
        ActivitySplitBinding.inflate(layoutInflater)
     }
+    
     private lateinit var adapter : SplitActivityAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
