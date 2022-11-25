@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">SplitTheBill</string>
+    <string name="name">Nome:</string>
+    <string name="name_hint">Insira o amigo</string>
+    <string name="items">Items comprados:</string>
+    <string name="items_hint">Insira os items</string>
+    <string name="value_to_pay">Valor Pago R$:</string>
+    <string name="to_pay_value">Valor a pagar:</string>
+    <string name="value_to_received">Valor a receber:</string>
+    <string name="value_received_hint">Insira o valor pago</string>
+    <string name="friend_add">Adcionar amigo</string>
+    <string name="friend_remove">Remover amigo</string>
+    <string name="friend_edit">Editar amigo</string>
+    <string name="calculate_amount">Calcular</string>
+    <string name="save_button">Enviar</string>
 </resources>

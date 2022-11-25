@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="20dp"
+    tools:context=".view.FriendActivity">
+
+    <TextView
+        android:id="@+id/friendNameTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/name"
+        android:ems="10"
+        android:textSize="25sp"
+        android:layout_marginVertical="15dp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:ems="10"
+        android:autofillHints=""
+        android:id="@+id/nameEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/name_hint"
+        android:textSize="30sp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friendNameTv"/>
+
+    <TextView
+        android:id="@+id/friendItems"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/items"
+        android:textSize="25sp"
+        android:layout_marginVertical="15dp"
+        android:padding="5dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameEt"/>
+
+    <EditText
+        android:id="@+id/itemsEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="@string/items_hint"
+        android:ems="10"
+        android:textSize="30sp"
+        android:padding="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/friendItems"/>
+
+
+    <TextView
+        android:id="@+id/valuetoPayTv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/value_to_pay"
+        android:textSize="25sp"
+        android:layout_marginVertical="15dp"
+        android:padding="5dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemsEt"/>
+
+    <EditText
+        android:id="@+id/valuetoPayEt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="@string/value_received_hint"
+        android:textSize="30sp"
+        android:padding="5dp"
+        android:ems="10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/valuetoPayTv"/>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="30sp"
+        android:ems="10"
+        android:layout_marginVertical="70dp"
+        android:text="@string/save_button"
+        app:layout_constraintTop_toBottomOf="@+id/valuetoPayEt"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
